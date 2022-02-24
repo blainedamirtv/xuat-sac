@@ -1,0 +1,5 @@
+then(async prs => {
+  .then(async (prs) => {
+    for (let { number, errorDesc } of prs) {
+      if (errorDesc !== 'unknown error') {
+        log.add(number, { number, closedOpened: true, errorDesc });
